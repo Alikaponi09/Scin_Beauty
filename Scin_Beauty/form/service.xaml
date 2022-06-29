@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="Scin_Beauty.form.service"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Scin_Beauty.form"
+             mc:Ignorable="d" 
+             d:DesignHeight="230" Background="White" d:DesignWidth="500">
+    <Border Margin="5,0,5,5"  BorderThickness="1" BorderBrush="#FFA24529">
+        <DockPanel Grid.ColumnSpan="2">
+            <Image
+                x:Name="imageServise"
+                Margin="10,0,10,0" 
+                DockPanel.Dock="Left"
+                Width="120"
+                Height="100"></Image>
+
+            <DockPanel LastChildFill="False" DockPanel.Dock="Right">
+                <Label 
+                    x:Name="nameService"
+                    Content="Наименование услуги"
+                    FontFamily="Halant"
+                    FontSize="16"
+                    DockPanel.Dock="Top"></Label>
+                <DockPanel DockPanel.Dock="Top">
+                    <Label
+                        x:Name="timeService"
+                        Content="Длительность"
+                        FontFamily="Halant"
+                        DockPanel.Dock="Top"  
+                        FontSize="16"/>
+                    <Label
+                        x:Name="priceService"
+                        Content="Стоимость"
+                        FontFamily="Halant"
+                        DockPanel.Dock="Top"  
+                        FontSize="16"/>
+                    <TextBlock
+                        TextWrapping="Wrap"
+                        Height="100"
+                        x:Name="descriptionService"
+                        Text="Описание"
+                        FontFamily="Halant"
+                        DockPanel.Dock="Top"  
+                        FontSize="16"/>
+                </DockPanel>
+                <DockPanel Margin="0,0,0,10" LastChildFill="False" >
+                    <Image x:Name="editService" Source="/Scin_Beauty;component/icon/pencil.png" Width="20" Height="20" MouseLeftButtonDown="editService_MouseLeftButtonDown"></Image>
+                    <Image x:Name="deleteService" Margin="20,2,0,0" Source="/Scin_Beauty;component/icon/delete.png" Width="20" Height="20" MouseLeftButtonDown="deleteService_MouseLeftButtonDown"></Image>
+                </DockPanel>
+            </DockPanel>
+        </DockPanel>
+    </Border>
+</UserControl>

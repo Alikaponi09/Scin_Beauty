@@ -1,0 +1,78 @@
+﻿<Window x:Class="Scin_Beauty.form.login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scin_Beauty.form" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+         Title="Авторизация" MinHeight="300" MaxHeight="300" MinWidth="400" MaxWidth="400" Height="300" Width="400">
+    <Grid Background="#FFA24529">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.05*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.05*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.05*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.05*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="White"  Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label
+                Content="АВТОРИЗАЦИЯ"
+                FontSize="24"
+                FontFamily="Halant" 
+                FontWeight="Normal"
+                Foreground="#FFA24529"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Grid.Row="1"></Label>
+            <TextBox
+                Grid.Row="2"
+                Width="200"
+                Height="30"
+                FontFamily="Halant"
+                BorderBrush="#FFA24529"
+                FontSize="14"
+                Foreground="Gray"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                
+            </TextBox>
+            <xctk:WatermarkTextBox x:Name="password"
+                Watermark="Пароль" 
+                                   Grid.Row="2"
+                                   Width="200"
+                                   Height="30"
+                                   FontFamily="Halant"
+                                   FontSize="14"
+                                   Foreground="Gray"
+                                   HorizontalContentAlignment="Center"
+                                   VerticalContentAlignment="Center"/>
+            <Button
+                Content="Войти"
+                x:Name="loginLabel"
+                FontSize="24"
+                FontFamily="Dubai" 
+                FontWeight="Normal"
+                Grid.Row="3"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom" 
+                Foreground="Black"
+                Background="Transparent"
+                BorderBrush="#FFA24529"
+                Width="100"
+                Height="40" Click="loginLabel_Click"
+                ></Button>
+        </Grid>
+    </Grid>
+</Window>

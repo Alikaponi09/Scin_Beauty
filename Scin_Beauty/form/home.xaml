@@ -1,0 +1,100 @@
+﻿<Window x:Class="Scin_Beauty.form.home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Scin_Beauty.form"
+        mc:Ignorable="d"
+        Title="Домашняя страница" MinHeight="900" MinWidth="1600" Height="900" Width="1600" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
+    <Grid>
+        <Grid Background="#FFA24529">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="0.05*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.05*"></RowDefinition>
+                <RowDefinition Height="0.1*" ></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="0.05*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid  Grid.Column="1" Grid.Row="1" Background="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="loginImage" Height="40" Margin="0,0,10,0" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1" Source="/Scin_Beauty;component/icon/login.png" MouseLeftButtonDown="loginImage_MouseLeftButtonDown"></Image>
+                <Image x:Name="exitImage" Height="40" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Source="/Scin_Beauty;component/icon/exit.png" MouseLeftButtonDown="exitImage_MouseLeftButtonDown"></Image>
+            </Grid>
+            <StackPanel Background="White" Grid.Column="1" Grid.Row="2">
+                <StackPanel>
+                    <Image Margin="0,10,0,20" Source="/Scin_Beauty;component/icon/logo (2).png" HorizontalAlignment="Center" Width="400" Height="230"></Image>
+                </StackPanel>
+                <Label
+                Content="BEAUTY SALON"
+                FontSize="38"
+                FontFamily="Halant" 
+                FontWeight="Medium"
+                Foreground="#FFA24529"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="0,0,0,20"></Label>
+                <Label
+                x:Name="listServiceLabel"
+                Content="Услуги"
+                FontSize="36"
+                FontFamily="Halant"
+                Grid.Row="4"
+                Foreground="Black"
+                DockPanel.Dock="Right"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,15" MouseLeftButtonDown="listServiceLabel_MouseLeftButtonDown"/>
+
+                <Label
+                x:Name="listProductLabel"
+                Content="Товары"
+                FontSize="36"
+                FontFamily="Halant"
+                Grid.Row="4"
+                Foreground="Black"
+                Margin="0,0,0,15"
+                HorizontalAlignment="Center" MouseLeftButtonDown="listProductLabel_MouseLeftButtonDown"/>
+
+                <Label
+                x:Name="addProduct"
+                Content="Добавление товара"
+                FontSize="36"
+                FontFamily="Halant"
+                Grid.Row="4"
+                Foreground="Black"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,15" MouseLeftButtonDown="addProduct_MouseLeftButtonDown"/>
+
+                <Label
+                x:Name="addServiceLabel"
+                Content="Добавление услуги"
+                FontSize="36"
+                FontFamily="Halant"
+                Grid.Row="4"
+                Foreground="Black"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,30" MouseLeftButtonDown="addServiceLabel_MouseLeftButtonDown"/>
+                <Label
+                x:Name="OtthetLabel"
+                Content="Отчёт"
+                FontSize="36"
+                FontFamily="Halant"
+                Grid.Row="4"
+                Foreground="Black"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,30" MouseLeftButtonDown="OtthetLabel_MouseLeftButtonDown"/>
+
+
+
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>
